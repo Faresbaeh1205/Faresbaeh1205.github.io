@@ -25,15 +25,29 @@
         <p><strong>Contact :</strong> fbaleh9@gmail.com</p>
     </div>
 
-    <form id="my-form" action="https://formspree.io/f/xkoebllj" method="POST">
+    <form id="my-form" action="https://formspree.io/f/xykvjqrq" method="POST">
         <label>Nom et Prénom</label>
         <input type="text" name="nom" required>
+        
+        <label>Adresse E-mail</label>
+        <input type="email" name="email_client" required>
+        
+        <label>Numéro de téléphone</label>
+        <input type="tel" name="telephone" required>
+        
         <label>Nom du projet</label>
         <input type="text" name="projet" required>
-        <label>Technologie</label>
-        <select name="tech"><option>Web / React</option><option>Python / AI</option><option>Système</option></select>
-        <label>Description</label>
+        
+        <label>Technologie souhaitée</label>
+        <select name="tech">
+            <option>Web / React & Node.js</option>
+            <option>Python / Intelligence Artificielle</option>
+            <option>Optimisation & Systèmes</option>
+        </select>
+        
+        <label>Description du projet</label>
         <textarea name="message" rows="4" required></textarea>
+        
         <button type="submit">Envoyer la demande</button>
         <p id="status"></p>
     </form>
