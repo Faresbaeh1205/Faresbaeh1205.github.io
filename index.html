@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fares BALEH  | Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+        body { background: #0f172a; font-family: 'Poppins', sans-serif; color: white; display: flex; justify-content: center; padding: 40px 20px; min-height: 100vh; margin: 0; }
+        .container { width: 100%; max-width: 600px; background: rgba(30, 41, 59, 0.5); backdrop-filter: blur(15px); padding: 40px; border-radius: 30px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); }
+        h1 { text-align: center; color: #818cf8; margin-bottom: 30px; }
+        .info-box { background: rgba(15, 23, 42, 0.6); padding: 20px; border-radius: 15px; margin-bottom: 20px; border-left: 4px solid #818cf8; }
+        label { display: block; margin: 15px 0 5px; font-size: 0.9rem; color: #94a3b8; }
+        input, textarea, select { width: 100%; padding: 12px; border-radius: 12px; border: none; background: rgba(255,255,255,0.05); color: white; margin-bottom: 10px; box-sizing: border-box; }
+        select { cursor: pointer; }
+        button { width: 100%; padding: 15px; background: linear-gradient(135deg, #6366f1, #a855f7); border: none; border-radius: 12px; color: white; font-weight: 600; cursor: pointer; transition: transform 0.2s; margin-top: 20px; }
+        button:hover { transform: scale(1.02); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Fares Baleh</h1>
+    <div class="info-box">
+        <p><strong>Expertise :</strong> Développeur Full Stack & Ingénieur Optimisation/Système</p>
+        <p><strong>GitHub :</strong> <a href="https://github.com/Faresbaeh1205" style="color: #818cf8;">Faresbaeh1205</a></p>
+        <p><strong>Contact :</strong> fbaleh9@gmail.com</p>
+    </div>
+
+    <form action="https://formspree.io/f/https://formspree.io/f/xnjrvkll" method="POST">
+        <label>Nom et Prénom</label>
+        <input type="text" name="nom" required>
+        
+        <label>Nom du projet</label>
+        <input type="text" name="projet" required>
+        
+        <label>Technologie souhaitée (Offre)</label>
+        <select name="tech">
+            <option value="React/Node.js">React & Node.js (Web Moderne)</option>
+            <option value="Python/AI">Python & Intelligence Artificielle</option>
+            <option value="Optimization/Systems">Algorithme d'optimisation (RO)</option>
+            <option value="FullStack Custom">Full Stack Sur-mesure</option>
+        </select>
+
+        <label>Description détaillée</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer la demande</button>
+    </form>
+</div>
+</body>
+</html>
